@@ -1,0 +1,139 @@
+.container-fluid {
+    padding: 0;
+}
+
+.navbar {
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav a.nav-link {
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 300px;
+}
+
+
+/*BOTAO ADICIONAR*/
+
+#add-link {
+    text-decoration: none;
+}
+
+.add-div {
+    background-color: rgb(0, 179, 0);
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.fas.fa-plus {
+    color: white;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+
+/*SEARCH*/
+
+.search-div {
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.fa-magnifying-glass {
+    font-size: 20px;
+    padding: 8px 0px;
+}
+
+
+/*LISTA TAREFA*/
+
+.list-div {
+    padding: 0;
+}
+
+.task-list {
+    padding-left: 0;
+}
+
+.task-item {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.hyperlink {
+    text-decoration: none;
+}
+
+.fas.fa-trash,
+.fas.fa-edit {
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px;
+    float: right;
+}
+
+.fas.fa-trash {
+    color: rgb(221, 0, 0);
+}
+
+.fas.fa-edit {
+    color: rgb(238, 194, 0);
+}
+
+
+/*RODAPE*/
+
+footer {
+    background-color: #333;
+    height: auto;
+    border-top: 2px solid #202020;
+}
+
+footer p {
+    color: #f5f5f5;
+    text-align: center;
+    top: 50%;
+    position: relative;
+}
+
+
+/*MESSAGE*/
+
+ul.messages {
+    padding: 0;
+}
+
+ul.messages li {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
