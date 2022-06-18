@@ -8,7 +8,7 @@
               rel="stylesheet"
               integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
               crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/fc8d8805f6.js" crossorigin="anonymous"></script>        
+        <script src="https://kit.fontawesome.com/fc8d8805f6.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
         <title>
             {% block title  %}{% endblock  %}
@@ -24,15 +24,26 @@
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">Tarefas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Usuários</a>
-                            </li>
+                            {% if  user.is_authenticated %}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Tarefas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Usuários</a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/accounts/login">Entrar</a>
+                                </li>
+                            {% endif %}
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sobre</a>
                             </li>
+                            {% if  user.is_authenticated %}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/accounts/logout">Sair</a>
+                                </li>
+                            {% endif %}
                         </div>
                     </div>
                 </nav>

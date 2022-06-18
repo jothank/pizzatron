@@ -156,3 +156,13 @@ li {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+
+/*LOGIN*/
+
+.auth-card {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
