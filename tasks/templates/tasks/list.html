@@ -15,7 +15,8 @@
                        id="search"
                        name="search"
                        placeholder="Digite o nome da tarefa para buscar"
-                       aria-label="search">
+                       aria-label="search"
+                       value="{{ request.GET.search }}">
                 <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
             </form>
         </div>
@@ -46,7 +47,9 @@
                 {% if tasks.has_previous %}
                     <a href="?page={{ tasks.previous_page_number }}"><i class="fas fa-arrow-left"></a></i>
                 {% endif %}
-                <span class="current">{{ tasks.number }} de {{ tasks.paginator.num_pages }}</span>
+                {% if tasks.paginator.num_pages %}
+                    <span class="current">{{ tasks.number }} de {{ tasks.paginator.num_pages }}</span>
+                {% endif %}
                 {% if tasks.has_next %}<a href="?page={{ tasks.next_page_number }}"><i class="fas fa-arrow-right"></a></i>{% endif %}
             </span>
         </div>

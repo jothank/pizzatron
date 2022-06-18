@@ -9,13 +9,16 @@ from django.core.paginator import Paginator
 
 
 def taskList(request):
-    tasks_list = Task.objects.all().order_by('-create_at')
+    search = request.GET.get('search')
 
-    paginator = Paginator(tasks_list, 5)
+    if search:
+        tasks = Task.objects.filter(title__icontains=search)
 
-    page = request.GET.get('page')
-
-    tasks = paginator.get_page(page)
+    else:
+        tasks_list = Task.objects.all().order_by('-create_at')
+        paginator = Paginator(tasks_list, 5)
+        page = request.GET.get('page')
+        tasks = paginator.get_page(page)
 
     return render(request, 'tasks/list.html', {'tasks': tasks})
 

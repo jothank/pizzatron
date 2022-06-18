@@ -37,7 +37,7 @@
 }
 
 .add-div {
-    background-color: rgb(0, 179, 0);
+    background-color: #007bff;
     cursor: pointer;
     display: inline-block;
     color: white;
@@ -101,11 +101,11 @@
 }
 
 .fas.fa-trash {
-    color: rgb(221, 0, 0);
+    color: #dc3545;
 }
 
 .fas.fa-edit {
-    color: rgb(238, 194, 0);
+    color: #ffc107;
 }
 
 
