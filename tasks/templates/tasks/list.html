@@ -9,13 +9,14 @@
             </div>
         </a>
         <div class="col-9 search-div">
-            <form class="d-flex">
+            <form method="GET" id="search-form" class="d-flex">
                 <input class="form-control me-2"
                        type="text"
                        id="search"
+                       name="search"
                        placeholder="Digite o nome da tarefa para buscar"
                        aria-label="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
             </form>
         </div>
         {% if messages %}
