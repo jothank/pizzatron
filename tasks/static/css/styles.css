@@ -1,6 +1,12 @@
+/*CONTAINER*/
+
 .container-fluid {
     padding: 0;
+    margin: 0;
 }
+
+
+/*NAVBAR*/
 
 .navbar {
     border-bottom: 1px solid #333;
@@ -165,4 +171,9 @@ li {
     margin-left: auto;
     margin-right: auto;
     width: 35%;
+}
+
+.change-form-p {
+    margin-top: 30px;
+    text-align: center;
 }
