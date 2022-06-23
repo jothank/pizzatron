@@ -12,9 +12,13 @@ from django.core.paginator import Paginator
 @login_required
 def taskList(request):
     search = request.GET.get('search')
+    filter = request.GET.get('filter')
 
     if search:
         tasks = Task.objects.filter(title__icontains=search, user=request.user)
+
+    elif filter:
+        tasks = Task.objects.filter(done=filter, user=request.user)
 
     else:
         tasks_list = Task.objects.all().order_by(
@@ -84,10 +88,13 @@ def changeStatus(request, id):
 
     if(task.done == 'doing'):
         task.done = 'done'
+        task.save()
+                  
     else:
         task.done = 'doing'
         task.save()
-        return redirect('/')
+      
+    return redirect('/')
 
 
 @login_required
