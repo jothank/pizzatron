@@ -90,8 +90,13 @@
     text-decoration: none;
     font-size: 20px;
     height: 50px;
+    padding: 0 5px;
     padding-top: 10px;
     border-bottom: 1px dashed #ccc;
+}
+
+.task-item.done {
+    background-color: rgb(240, 240, 240);
 }
 
 .hyperlink {
@@ -99,7 +104,8 @@
 }
 
 .fas.fa-trash,
-.fas.fa-edit {
+.fas.fa-edit,
+.fas.fa-check {
     cursor: pointer;
     margin: 5px;
     font-size: 20px;
@@ -112,6 +118,14 @@
 
 .fas.fa-edit {
     color: #ffc107;
+}
+
+.fas.fa-check {
+    color: #ccc;
+}
+
+.done .fas.fa-check {
+    color: #00ac0e;
 }
 
 

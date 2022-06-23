@@ -8,6 +8,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 
+
 @login_required
 def taskList(request):
     search = request.GET.get('search')
@@ -16,17 +17,20 @@ def taskList(request):
         tasks = Task.objects.filter(title__icontains=search, user=request.user)
 
     else:
-        tasks_list = Task.objects.all().order_by('-create_at').filter(user=request.user)
+        tasks_list = Task.objects.all().order_by(
+            '-create_at').filter(user=request.user)
         paginator = Paginator(tasks_list, 5)
         page = request.GET.get('page')
         tasks = paginator.get_page(page)
 
     return render(request, 'tasks/list.html', {'tasks': tasks})
 
+
 @login_required
 def taskView(request, id):
     task = get_object_or_404(Task, pk=id)
     return render(request, 'tasks/task.html', {'task': task})
+
 
 @login_required
 def newTask(request):
@@ -43,6 +47,7 @@ def newTask(request):
     else:
         form = TaskForm()
         return render(request, 'tasks/addtask.html', {'form': form})
+
 
 @login_required
 def editTask(request, id):
@@ -62,6 +67,7 @@ def editTask(request, id):
     else:
         return render(request, 'tasks/edittask.html', {'form': form, 'task': task})
 
+
 @login_required
 def deleteTask(request, id):
     task = get_object_or_404(Task, pk=id)
@@ -71,9 +77,23 @@ def deleteTask(request, id):
 
     return redirect('/')
 
+
+@login_required
+def changeStatus(request, id):
+    task = get_object_or_404(Task, pk=id)
+
+    if(task.done == 'doing'):
+        task.done = 'done'
+    else:
+        task.done = 'doing'
+        task.save()
+        return redirect('/')
+
+
 @login_required
 def helloWorld(request):
     return HttpResponse('Hello World!')
+
 
 @login_required
 def yourName(request, name):
