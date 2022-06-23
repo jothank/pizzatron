@@ -75,6 +75,20 @@
 }
 
 
+/*FILTER*/
+
+.filter-div {
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+#filter {
+    display: inline-block;
+    width: 200px;
+    margin-left: 10px;
+}
+
+
 /*LISTA TAREFA*/
 
 .list-div {
