@@ -18,22 +18,24 @@
             </div>
         </div>
         <h1>Lista de Tarefas</h1>
-        <a id="add-link" href="newtask/">
-            <div class="col-2 add-div">
-                <i class="fas fa-plus"></i>Adicionar Tarefa
+        <div>
+            <a id="add-link" href="newtask/">
+                <div class="col-2 add-div">
+                    <i class="fas fa-plus"></i>Adicionar Tarefa
+                </div>
+            </a>
+            <div class="col-9 search-div">
+                <form method="GET" id="search-form" class="d-flex">
+                    <input class="form-control me-2"
+                           type="text"
+                           id="search"
+                           name="search"
+                           placeholder="Digite o nome da tarefa para buscar"
+                           aria-label="search"
+                           value="{{ request.GET.search }}">
+                    <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+                </form>
             </div>
-        </a>
-        <div class="col-9 search-div">
-            <form method="GET" id="search-form" class="d-flex">
-                <input class="form-control me-2"
-                       type="text"
-                       id="search"
-                       name="search"
-                       placeholder="Digite o nome da tarefa para buscar"
-                       aria-label="search"
-                       value="{{ request.GET.search }}">
-                <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
-            </form>
         </div>
         <div class="col-12 filter-div">
             <span>Filtrar por:</span>
