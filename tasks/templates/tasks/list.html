@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Lista de Tarefas{% endblock %}
+{% block title %}PizzaTron{% endblock %}
 {% block content %}
     <div class="offset-1 col-10 list-div">
         <div class="container dashboard">
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="container">
-            <h1>Lista de Tarefas</h1> 
+            <h1>Lista de Tarefas</h1>
             <div>
                 <a id="add-link" href="newtask/">
                     <div class="col-2 add-div">
@@ -42,7 +42,7 @@
             </div>
             <div class="col-12 filter-div">
                 <span>Filtrar por:</span>
-                <select name="filter" id="filter" class="form-control">
+                <select name="filter" id="filter" class="form-select">
                     <option value="">
                         Escolha uma opção
                     </option>
@@ -53,6 +53,7 @@
                         Tarefas em Aberto
                     </option>
                 </select>
+                <a href="http://127.0.0.1:8000/"><i class="fa-solid fa-arrows-rotate" id="refresh-btn"></i></a>
             </div>
             {% if messages %}
                 <ul>

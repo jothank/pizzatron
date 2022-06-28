@@ -106,6 +106,16 @@
 }
 
 
+/*REFRESH*/
+
+.fa-arrows-rotate {
+    font-size: 18px;
+    padding: 7px 0px;
+    cursor: pointer;
+    color: black;
+}
+
+
 /*SEARCH*/
 
 .search-div {
@@ -132,7 +142,7 @@
 
 #filter {
     display: inline-block;
-    width: 200px;
+    width: 250px;
     margin-left: 10px;
 }
 

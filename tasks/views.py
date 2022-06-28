@@ -7,13 +7,16 @@ from .forms import TaskForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
+from django.contrib.auth.models import User
 import datetime
+
 
 @login_required
 def taskList(request):
     search = request.GET.get('search')
     filter = request.GET.get('filter')
-    tasksDoneRecently = Task.objects.filter(done='done', update_at__gt=datetime.datetime.now()-datetime.timedelta(30)).count()
+    tasksDoneRecently = Task.objects.filter(
+        done='done', update_at__gt=datetime.datetime.now()-datetime.timedelta(30)).count()
     tasksDone = Task.objects.filter(done='done', user=request.user).count()
     tasksDoing = Task.objects.filter(done='doing', user=request.user).count()
 
@@ -31,6 +34,12 @@ def taskList(request):
         tasks = paginator.get_page(page)
 
     return render(request, 'tasks/list.html', {'tasks': tasks, 'tasksrecently': tasksDoneRecently, 'tasksdone': tasksDone, 'tasksdoing': tasksDoing})
+
+
+@login_required
+def users(request):
+    users = User.objects.all()
+    return render(request, 'tasks/users.html', {'users': users})
 
 
 @login_required
@@ -92,11 +101,11 @@ def changeStatus(request, id):
     if(task.done == 'doing'):
         task.done = 'done'
         task.save()
-                  
+
     else:
         task.done = 'doing'
         task.save()
-      
+
     return redirect('/')
 
 
