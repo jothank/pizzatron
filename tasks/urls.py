@@ -9,5 +9,6 @@ urlpatterns = [
     path('edit/<int:id>', views.editTask, name='edit-task'),
     path('changestatus/<int:id>', views.changeStatus, name='change-status'),
     path('delete/<int:id>', views.deleteTask, name='delete-task'),
-    path('yourname/<str:name>', views.yourName, name='your-name'),
+    path('users/', views.userList, name='user-list'),
+    path('yourname/<str:name>', views.yourName, name='your-name'),    
 ]

@@ -35,12 +35,10 @@ def taskList(request):
 
     return render(request, 'tasks/list.html', {'tasks': tasks, 'tasksrecently': tasksDoneRecently, 'tasksdone': tasksDone, 'tasksdoing': tasksDoing})
 
-
 @login_required
-def users(request):
+def userList(request):
     users = User.objects.all()
     return render(request, 'tasks/users.html', {'users': users})
-
 
 @login_required
 def taskView(request, id):
