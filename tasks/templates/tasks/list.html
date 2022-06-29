@@ -10,21 +10,21 @@
                     <span>{{ tasksrecently }}</span>
                 </div>
                 <div class="col-4 dashboard-box" id="dashboard-done">
-                    <h4>Tarefas Finalizadas</h4>
+                    <h4>Pedidos Finalizadas</h4>
                     <span>{{ tasksdone }}</span>
                 </div>
                 <div class="col-4 dashboard-box" id="dashboard-doing">
-                    <h4>Tarefas em Aberto</h4>
+                    <h4>Pedidos em Aberto</h4>
                     <span>{{ tasksdoing }}</span>
                 </div>
             </div>
         </div>
         <div class="container">
-            <h1>Lista de Tarefas</h1>
+            <h1>Lista de Pedidos</h1>
             <div>
                 <a id="add-link" href="newtask/">
                     <div class="col-2 add-div">
-                        <i class="fas fa-plus"></i>Adicionar Tarefa
+                        <i class="fas fa-plus"></i>Adicionar Pedido
                     </div>
                 </a>
                 <div class="col-9 search-div">
@@ -33,7 +33,7 @@
                                type="text"
                                id="search"
                                name="search"
-                               placeholder="Digite o nome da tarefa para buscar"
+                               placeholder="Digite algo para buscar"
                                aria-label="search"
                                value="{{ request.GET.search }}">
                         <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
