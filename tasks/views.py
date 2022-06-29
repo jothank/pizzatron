@@ -89,7 +89,7 @@ def deleteTask(request, id):
     task = get_object_or_404(Task, pk=id)
     task.delete()
 
-    messages.info(request, 'Tarefa deletada com sucesso.')
+    messages.info(request, 'Pedido excluído com sucesso.')
 
     return redirect('/')
 
