@@ -2,11 +2,19 @@
 {% block title %}PizzaTron{% endblock %}
 {% block content %}
     <div class="offset-1 col-10 list-div">
-        <h1>{{ task.title }}</h1>
+        <h1>Pedido # {{task.id}}</h1>
+        <label for="exampleFormControlInput1" class="form-label">Título:</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">{{ task.title }}</span>
+        </div>
+        <label for="exampleFormControlInput1" class="form-label">Endereço:</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">{{ task.adress }}</span>
+        </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Descrição:</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" disabled readonly>{{ task.description }}</textarea>
-          </div>
+        </div>
         <br>
         <a class="btn btn-secondary" href="/" role="button">Voltar</a>
         <br>
