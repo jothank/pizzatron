@@ -35,10 +35,12 @@ def taskList(request):
 
     return render(request, 'tasks/list.html', {'tasks': tasks, 'tasksrecently': tasksDoneRecently, 'tasksdone': tasksDone, 'tasksdoing': tasksDoing})
 
+
 @login_required
 def userList(request):
     users = User.objects.all()
     return render(request, 'tasks/users.html', {'users': users})
+
 
 @login_required
 def taskView(request, id):
@@ -107,11 +109,5 @@ def changeStatus(request, id):
     return redirect('/')
 
 
-@login_required
-def helloWorld(request):
-    return HttpResponse('Hello World!')
-
-
-@login_required
-def yourName(request, name):
-    return render(request, 'tasks/yourname.html', {'name': name})
+def about(request):
+    return render(request, 'tasks/about.html')
