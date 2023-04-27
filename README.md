@@ -47,7 +47,7 @@ pip install virtualenv
 
 <p>
   <a href="https://dms.licdn.com/playlist/C4E05AQFluJB0r4Rn6A/mp4-720p-30fp-crf28/0/1656473289440?e=1683162000&amp;v=beta&amp;t=UGuvKok-SmBJIrRAEVAZE4Uz8hYf1RUhBFwrqNg8Cu8" target="_blank">
-    <img src="https://media.licdn.com/dms/image/C4E05AQFluJB0r4Rn6A/videocover-high/0/1656473274619?e=1683162000&amp;v=beta&amp;t=rigEEbEky-r1OfGN0KbEkvZwi-lfCseBb4TlF4fTL8o" alt="video" width="500" height="300">
+    <img src="https://media.licdn.com/dms/image/C4E05AQFluJB0r4Rn6A/videocover-high/0/1656473274619?e=1683162000&amp;v=beta&amp;t=rigEEbEky-r1OfGN0KbEkvZwi-lfCseBb4TlF4fTL8o" alt="video" width="500" height="300" target="_blank">
   </a>
 </p>
 
