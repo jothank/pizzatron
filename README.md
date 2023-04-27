@@ -43,9 +43,7 @@ pip install virtualenv
 
 <p>Este projeto foi desenvolvido como parte do curso de Análise e Desenvolvimento de Sistemas, na Faculdade SENAC, na disciplina de Desenvolvimento WEB, ministrada pelo professor Alexsander Junior. O projeto foi desenvolvido por Jonathan Costa, Anna Clara, Vanessa Ramos e Lauren Biasi.</p>
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/jothank/pizzatron/raw/main/1656473289440.mp4" type="video/mp4">
-</video>
+[![Everything Is AWESOME](https://media.licdn.com/dms/image/C4E05AQFluJB0r4Rn6A/videocover-high/0/1656473274619?e=1683162000&v=beta&t=rigEEbEky-r1OfGN0KbEkvZwi-lfCseBb4TlF4fTL8o)](https://dms.licdn.com/playlist/C4E05AQFluJB0r4Rn6A/mp4-720p-30fp-crf28/0/1656473289440?e=1683162000&v=beta&t=UGuvKok-SmBJIrRAEVAZE4Uz8hYf1RUhBFwrqNg8Cu8)
 
 <h2>Repositório</h2>
 
