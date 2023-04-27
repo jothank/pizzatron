@@ -1,55 +1,53 @@
-<div class="container">
-        <h1>Sobre</h1>
-        <ul>
-            <li>Projeto feito em Python com utilização do Framework Django, Bootstrap e JQuery.</li>
-        </ul>
-        <h4>Introdução para execução do Projeto</h4>
-        <ul>
-            <li>pip install pip</li>
-            <li>pip install Django</li>
-            <li>pip install django-crispy-forms</li>
-            <li>pip install virtualenv</li>
-            <li>pip manage.py runserver</li>
-            <li>Login: admin Senha: 123</li>
-        </ul>
-        <h4>PizzaTron</h4>
-        <ul>
-            <li>
-                PizzaTron 3000 era um jogo antigo de criação de pizzas que deu origem ao projeto voltado a Agendamentos de Entregas de pizzas.
-            </li>
-        </ul>
-        <h4>Resumo</h4>
-        <ul>
-            <li>Tela de Login e Cadastro de Usuários</li>
-            <li>Dashboard contendo informações de Agendamentos Finalizados e em Abertos</li>
-            <li>Botão para Adicionar novo Agendamento</li>
-            <li>Barra de pesquisa de Agendamentos e opção de Filtros por Agendamentos Finalizados e Abertos</li>
-            <li>Listagem contendo Botões de Finalização, Edição e Exclusão</li>
-            <li>Adicionado Paginação quando possuir mais de 5 agendamentos</li>
-            <li>Página contendo listagem de Usuários Operadores da plataforma</li>
-            <li>Página de Sobre</li>
-            <li>Todas as paginas exceto "Sobre" exigem autenticação de usuário</li>
-        </ul>
-        <h4>Conclusão</h4>
-        <ul>
-            <li>Faculdade: SENAC</li>
-            <li>Curso: Analise e Desenvolvimento de Sistemas</li>
-            <li>Matéria: Desenvolvimento WEB</li>
-            <li>Professor: Alexsander Junior</li>
-            <li>
-                Projeto feito por: Jonathan Costa, Anna Clara, Vanessa Ramos e Lauren Biasi
-            </li>
-        </ul>
-        <h4>
-            Repositório
-        </h4>
-        <ul>
-            <li>
-                <a href="https://github.com/jothank/pizzatron" target="_blank">
-                    <img src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white"
-                         target="_blank">
-                </a>
-            </li>
-        </ul>
-        <br>
-    </div>
+<h1>Sobre</h1>
+
+<p>Este é um projeto desenvolvido em Python utilizando o framework Django, Bootstrap e JQuery, que consiste em uma plataforma para agendamentos de entregas de pizzas. O objetivo do projeto é facilitar a gestão e organização de pedidos de pizza.</p>
+
+<h2>Introdução para execução do Projeto</h2>
+
+<p>Para executar o projeto, é necessário instalar as seguintes dependências:</p>
+
+<pre><code>pip install pip
+pip install Django
+pip install django-crispy-forms
+pip install virtualenv
+</code></pre>
+
+<p>Para rodar o servidor localmente, execute o comando:</p>
+
+<pre><code>pip manage.py runserver
+</code></pre>
+
+<p>O login de acesso é: admin e a senha é: 123.</p>
+
+<h2>PizzaTron</h2>
+
+<p>PizzaTron 3000 era um jogo antigo de criação de pizzas que inspirou o desenvolvimento deste projeto voltado para agendamentos de entregas de pizzas.</p>
+
+<h2>Resumo</h2>
+
+<p>O projeto apresenta as seguintes funcionalidades:</p>
+
+<ul>
+  <li>Tela de login e cadastro de usuários</li>
+  <li>Dashboard contendo informações de agendamentos finalizados e em abertos</li>
+  <li>Botão para adicionar novo agendamento</li>
+  <li>Barra de pesquisa de agendamentos e opção de filtros por agendamentos finalizados e abertos</li>
+  <li>Listagem contendo botões de finalização, edição e exclusão</li>
+  <li>Adicionado paginação quando possuir mais de 5 agendamentos</li>
+  <li>Página contendo listagem de usuários operadores da plataforma</li>
+  <li>Página de sobre</li>
+  <li>Todas as páginas, exceto "Sobre", exigem autenticação de usuário.</li>
+</ul>
+
+<h2>Conclusão</h2>
+
+<p>Este projeto foi desenvolvido como parte do curso de Análise e Desenvolvimento de Sistemas, na Faculdade SENAC, na disciplina de Desenvolvimento WEB, ministrada pelo professor Alexsander Junior. O projeto foi desenvolvido por Jonathan Costa, Anna Clara, Vanessa Ramos e Lauren Biasi.</p>
+
+<video width="640" height="360" controls>
+  <source src="https://dms.licdn.com/playlist/C4E05AQFluJB0r4Rn6A/mp4-720p-30fp-crf28/0/1656473289440?e=1683158400&v=beta&t=FiUxUpysJRAyrQ_O5ADylq88WYdgiW8TnENknbBPRZU" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h2>Repositório</h2>
+
+<p>O código fonte deste projeto está disponível em <a href="https://github.com/jothank/pizzatron">https://github.com/jothank/pizzatron</a>.</p>
