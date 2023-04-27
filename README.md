@@ -43,6 +43,10 @@ pip install virtualenv
 
 <p>Este projeto foi desenvolvido como parte do curso de Análise e Desenvolvimento de Sistemas, na Faculdade SENAC, na disciplina de Desenvolvimento WEB, ministrada pelo professor Alexsander Junior. O projeto foi desenvolvido por Jonathan Costa, Anna Clara, Vanessa Ramos e Lauren Biasi.</p>
 
+<video width="640" height="360" controls>
+  <source src="https://github.com/jothank/pizzatron/raw/main/1656473289440.mp4" type="video/mp4">
+</video>
+
 <h2>Repositório</h2>
 
 <p>O código fonte deste projeto está disponível em <a href="https://github.com/jothank/pizzatron">https://github.com/jothank/pizzatron</a>.</p>
